@@ -1,0 +1,21 @@
+DVOJKLIK MYSI
+Leve tlactiko:      zobrazeni kvadru
+Prave tlacitko:     zobrazeni jehlanu
+Stredni tlacitko:   zobrazeni kvadru i jehlanu
+
+PODRZENI MYSI
+Leve tlacitko:      pohyb po platne
+Prave tlacitko:     rotace kolem osy X,Y,Z
+
+Kolecko mysi:       zoom
+--------------------------------------------
+KLAVESNICE
++, -                            zoom
+W,S,A,D:                        pohyby do stran
+X,Y,Z:                          rotace kolem osi
+Sipky a numericke klavesy 8,2:  translace osi
+O,P:                            zmena projekce, ortogonalni, perspektivni
+F1,F2,F3:                       zobrazeni krivek kvadru
+Delete:                         vymazani objektu
+Backspace:                      vychozi stav
+Shift, Alt:                     animace start, stop

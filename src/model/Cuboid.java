@@ -1,0 +1,44 @@
+package model;
+
+import transforms.Point3D;
+
+import java.awt.*;
+
+/**
+ * Vytvoreni kvadru
+ */
+public class Cuboid extends Solid {
+    public static final Color PINK = new Color(255,180,200);
+
+    public Cuboid() {
+        color = PINK.getRGB();                          // barva kvadru
+
+        vertexBuffer.add(new Point3D(0,0,0));   // 0
+        vertexBuffer.add(new Point3D(1,0,0));   // 1
+        vertexBuffer.add(new Point3D(1,0,2));   // 2
+        vertexBuffer.add(new Point3D(0,0,2));   // 3
+        vertexBuffer.add(new Point3D(0,1,0));   // 4
+        vertexBuffer.add(new Point3D(1,1,0));   // 5
+        vertexBuffer.add(new Point3D(1,1,2));   // 6
+        vertexBuffer.add(new Point3D(0,1,2));   // 7
+
+        addIndices(0,1,1,2,2,3,3,0);                    // spojeni bodu, vytvoreni cary
+        addIndices(4,5,5,6,6,7,7,4);
+        addIndices(0,4,1,5,2,6,3,7);
+
+        movement = 'n';                                 // fixovani transformace
+
+        /*
+                 7  *  *   6
+               * *       * *
+             *   *     *   *
+          *      *   *     *
+        4  *  *  3  5   *  2
+        *       *   *     *
+        *     *     *   *
+        *  *        * *
+        0  *  *  *  1
+
+        */
+    }
+}
